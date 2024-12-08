@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta RAADS-R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta RAADS-R</h1>
+        <form id="survey-form">
+            <div class="personal-info">
+                <label>Nombre: <input type="text" id="name" required></label>
+                <label>RUT: <input type="text" id="rut" required></label>
+                <label>Edad: <input type="number" id="age" required></label>
+                <label>Email: <input type="email" id="email" required></label>
+            </div>
+            <div id="questions"></div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Resultado</h2>
+            <p id="score"></p>
+            <p id="conclusion"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
